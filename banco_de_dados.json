@@ -1,0 +1,61 @@
+const produto = [
+ {
+    nome: "Arroz",
+    preco: 28,
+    quantidade: 100,
+    peso: "5kg",
+    marca: "JJJJ",
+    codigo: 2759
+},
+{
+    nome: "Feijão",
+    preco: 18,
+    quantidade: 98,
+    peso: "2kg",
+    marca: "BBBB",
+    codigo: 9358
+
+
+},
+{
+
+    nome: "Macarrão",
+    preco: 130,
+    quantidade: 150,
+    peso: "3kg",
+    marca: "RRRR",
+    codigo: 2085
+
+
+},
+{
+
+    nome: "Carne de boi",
+    preco: 200,
+    quantidade: 150,
+    peso: "10kg",
+    marca: "NNNN",
+    codigo: 3823
+
+},
+{
+
+    nome: "Maçã",
+    preco: 7,
+    quantidade: 500,
+    peso: "1kg",
+    marca: "MMMM",
+    codigo: 2987
+
+},
+{
+
+    nome: "Laranja",
+    preco: 6,
+    quantidade: 500,
+    peso: "1kg",
+    marca: "KKKK",
+    codigo: 8746
+
+
+},
