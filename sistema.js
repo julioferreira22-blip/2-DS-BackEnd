@@ -14,9 +14,9 @@ function adicionar() {
     id: 11,
     nome: "Chocolate",
     preco: 7,
-    marca: "Nestlé",
+    marca: "DDDDD",
     estoque: 20,
-    categoria: "Doce"
+    codigo: "8463"
   };
 
   produtos.push(novo);
