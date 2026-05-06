@@ -13,4 +13,7 @@ let produtos = [
   { id: 10, nome: "Refrigerante", preco: 8.00, marca: "MMMMM", estoque: 30, codigo: "8365" }
 ];
 
+fs.writeFileSync("produtos.json", JSON.stringify(produtos));
+
+
 console.log("JSON de mercado criado!");
