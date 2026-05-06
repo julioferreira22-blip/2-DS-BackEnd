@@ -1,61 +1,19 @@
-const produto = [
- {
-    nome: "Arroz",
-    preco: 28,
-    quantidade: 100,
-    peso: "5kg",
-    marca: "JJJJ",
-    codigo: 2759
-},
-{
-    nome: "Feijão",
-    preco: 18,
-    quantidade: 98,
-    peso: "2kg",
-    marca: "BBBB",
-    codigo: 9358
+const fs = require("fs");
 
+let produtos = [
+  { id: 1, nome: "Arroz", preco: 25, marca: "Tio João", estoque: 50, categoria: "Grãos" },
+  { id: 2, nome: "Feijão", preco: 8, marca: "Camil", estoque: 40, categoria: "Grãos" },
+  { id: 3, nome: "Macarrão", preco: 5, marca: "Renata", estoque: 60, categoria: "Massas" },
+  { id: 4, nome: "Leite", preco: 6, marca: "Italac", estoque: 30, categoria: "Laticínios" },
+  { id: 5, nome: "Pão", preco: 10, marca: "Pullman", estoque: 20, categoria: "Padaria" },
+  { id: 6, nome: "Café", preco: 15, marca: "Pilão", estoque: 25, categoria: "Bebidas" },
+  { id: 7, nome: "Açúcar", preco: 4, marca: "União", estoque: 35, categoria: "Grãos" },
+  { id: 8, nome: "Óleo", preco: 7, marca: "Soya", estoque: 45, categoria: "Cozinha" },
+  { id: 9, nome: "Biscoito", preco: 3, marca: "Oreo", estoque: 50, categoria: "Lanches" },
+  { id: 10, nome: "Refrigerante", preco: 8, marca: "Coca-Cola", estoque: 30, categoria: "Bebidas" }
+];
 
-},
-{
+// salvar JSON
+fs.writeFileSync("produtos.json", JSON.stringify(produtos));
 
-    nome: "Macarrão",
-    preco: 130,
-    quantidade: 150,
-    peso: "3kg",
-    marca: "RRRR",
-    codigo: 2085
-
-
-},
-{
-
-    nome: "Carne de boi",
-    preco: 200,
-    quantidade: 150,
-    peso: "10kg",
-    marca: "NNNN",
-    codigo: 3823
-
-},
-{
-
-    nome: "Maçã",
-    preco: 7,
-    quantidade: 500,
-    peso: "1kg",
-    marca: "MMMM",
-    codigo: 2987
-
-},
-{
-
-    nome: "Laranja",
-    preco: 6,
-    quantidade: 500,
-    peso: "1kg",
-    marca: "KKKK",
-    codigo: 8746
-
-
-},
+console.log("JSON de mercado criado!");
